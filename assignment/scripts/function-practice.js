@@ -2,27 +2,41 @@ console.log('***** Function Practice *****')
 
 // Add the required code to complete the functions below.  After _each_ function, use a console log to call the function to test it and display the result.
 
+// Ryan's Comment: Question #1 is the example question, correct?  I'll leave it as is, since it's completing it's goal. :)  Side note, I've been writing functions out in the shorthand syntax way (e.g., let function = () => {};), so I'm going to do both ways for practice, below, and number the questions in console.log outputs for easier reading.
+
 // 1. Function to return 'Hello World!'
+console.log("EXAMPLE: Question #1.a:");
 function hello() {
   return 'Hello World!';
 }
-// Call the function to test
 console.log('Test - should say "Hello World!"', hello());
-
-// Ryan's Comment: The above is the example, correct?  I'll leave it as is, since it's completing it's goal. :)  Side note, I've been writing functions out in the short-hand syntax way (e.g., let function = () => {};), so I'm going to do both ways for practice, below, and comment out my added short-hand.  
+// Ryan's Comment: Just practicing the shorthand syntax, below:
+console.log("RYAN REWRITE: Question #1.b:");
+let hello1 = () => "Hello World!";
+console.log(hello1());
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
+console.log("Question #2.a:")
 function helloName(name) {
-  return;
+  return `Hello, ${name}!  Thank you for reviewing my code!`;
 }
-// Remember to call the function to test
-
+console.log(helloName("Dane"));
+// And for the re-write version, below:
+console.log("Question #2.b:");
+const helloName1 = name => `Hello, ${name}!  Thank you for reviewing my code!`;
+console.log(helloName1("Dane"));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+console.log("Question #3.a:");
+function addNumbers(firstNumber, secondNumber) {
+  let sum = firstNumber + secondNumber; // Making it unnecessarily complicated with String Interpolation, so added a sum variable.
+  return `The sum of ${firstNumber} and ${secondNumber} is ${sum}.`;
 }
-
+console.log(addNumbers(2, 3)); // Returns "5" in the String Interpolation to console.
+// And for the re-write, in a less complicated way:
+console.log("Question #3.b:");
+const addNumbers1 = (firstNum, secondNum) => firstNum + secondNum;
+console.log(addNumbers1(2, 3)); // Returns JUST "5" to console.
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
