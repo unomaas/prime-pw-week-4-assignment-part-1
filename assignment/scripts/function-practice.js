@@ -16,6 +16,7 @@ console.log('Test - should say "Hello World!"', hello());
 console.log("--- Question #1.b: RYAN'S ADDED SHORTHAND REWRITE ---");
 let hello1 = () => "Hello World!";
 console.log(hello1());
+console.log("\n");
 
 
 
@@ -29,6 +30,7 @@ console.log(helloName("Dane"));
 console.log("--- Question #2.b: ---");
 const helloName1 = name => `Hello, ${name}!  Thank you for reviewing my code!`;
 console.log(helloName1("Dane"));
+console.log("\n");
 
 
 
@@ -37,11 +39,12 @@ console.log("--- Question #3.a: ---");
 function addNumbers(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
-console.log(`The sum of those numbers is:`, addNumbers(2, 3)); // Outputs the string with "5".
+console.log(`The sum of those numbers is (expect 5): `, addNumbers(2, 3)); // Outputs the string with "5".
 // And for the concise arrow re-write:
 console.log("--- Question #3.b: ---");
-const addNumbers1 = (firstNum, secondNum) => firstNum + secondNum;
-console.log(`The sum of those numbers is:`, addNumbers1(2, 3)); // Outputs the string with "5".
+const addNumbers1 = (firstNumber, secondNumber) => firstNumber + secondNumber;
+console.log(`The sum of those numbers is (expect 5): `, addNumbers1(2, 3)); // Outputs the string with "5".
+console.log("\n");
 
 
 
@@ -50,14 +53,16 @@ console.log("--- Question #4.a: ---");
 function multiplyThree(num1, num2, num3) {
   return num1 * num2 * num3;
 }
-console.log(`The product of those numbers is: `, multiplyThree(1, 2, 3)); // Outputs the string with "6".
+console.log(`The product of those numbers is (expect 6): `, multiplyThree(1, 2, 3)); // Outputs the string with "6".
 // And for the concise arrow re-write:
 console.log("--- Question #4.b: ---");
-const multiplyThree1 = (number1, number2, number3) => number1 * number2 * number3;
-console.log(`The product of those numbers is: `, multiplyThree1(1, 2, 3)); // Outputs the string with "6".
+const multiplyThree1 = (num1, num2, num3) => num1 * num2 * num3;
+console.log(`The product of those numbers is (expect 6): `, multiplyThree1(1, 2, 3)); // Outputs the string with "6".
+console.log("\n");
 
 
-// Ryan's Comment: Since the concise arrow re-write won't drastically shorten the rest of the questions, I'll just be using that, instead of using both.
+
+// Ryan's Comment: Since the concise arrow re-write won't drastically shorten the rest of the questions, I'll just be using that going forward, instead of using both.
 // 5. Function that will return true if a number is positive, or greater than zero, and false otherwise
 console.log("--- Question #5: ---");
 const isPositive = number => {
@@ -70,6 +75,7 @@ const isPositive = number => {
 console.log('isPositive - should say true:', isPositive(3));
 console.log('isPositive - should say false:', isPositive(0));
 console.log('isPositive - should say false:', isPositive(-3));
+console.log("\n");
 
 
 
@@ -77,13 +83,14 @@ console.log('isPositive - should say false:', isPositive(-3));
 console.log("--- Question #6: ---");
 const questionSixEmptyArray = [];
 const questionSixArray = ["First", "Middle", "Last"];
-console.log(`The value of 'questionSixEmptyArray' is: `, questionSixEmptyArray);
 console.log(`The value of 'questionSixArray' is: `, questionSixArray);
+console.log(`The value of 'questionSixEmptyArray' is: `, questionSixEmptyArray);
 const getLast = array => {
   return array[array.length -1];
 };
-console.log(`Testing 'getLast(questionSixArray)' function.  Expect 'Last': `, getLast(questionSixArray)); // Outputs "Last".
-console.log(`Testing 'getLast(questionSixEmptyArray)' function.  Expect 'undefined': `, getLast(questionSixEmptyArray)); // Outputs "undefined".
+console.log(`Testing 'getLast(questionSixArray)' function (expect 'Last'): `, getLast(questionSixArray)); // Outputs "Last".
+console.log(`Testing 'getLast(questionSixEmptyArray)' function (expect 'undefined'): `, getLast(questionSixEmptyArray)); // Outputs "undefined".
+console.log("\n");
 
 
 
@@ -100,9 +107,10 @@ const find = (value, array) => {
   }
   return isThere;
 };
-console.log(`Testing 'find(1)' function.  Expect 'true': `, find(1, questionSevenArray)); // Returns "true".
-console.log(`Testing 'find(2)' function.  Expect 'true': `, find(2, questionSevenArray)); // Returns "true".
-console.log(`Testing 'find(4)' function.  Expect 'false': `, find(4, questionSevenArray)); // Returns "false".
+console.log(`Testing 'find(1)' function (expect 'true'): `, find(1, questionSevenArray)); // Returns "true".
+console.log(`Testing 'find(2)' function (expect 'true'): `, find(2, questionSevenArray)); // Returns "true".
+console.log(`Testing 'find(4)' function (expect 'false'): `, find(4, questionSevenArray)); // Returns "false".
+console.log("\n");
 
 
 
@@ -118,8 +126,9 @@ const isFirstLetter = (letter, string) => {
     return false;
   }
 };
-console.log(`Testing 'isFirstLetter('a', 'apple')' function.  Expect 'true':`, isFirstLetter('a', 'apple'));
-console.log(`Testing 'isFirstLetter('z', 'apple')' function.  Expect 'false':`, isFirstLetter('z', 'apple'));
+console.log(`Testing 'isFirstLetter("a", "apple")' function (expect 'true'):`, isFirstLetter("a", "apple"));
+console.log(`Testing 'isFirstLetter("z", "apple")' function (expect 'false'):`, isFirstLetter("z", "apple"));
+console.log("\n");
 
 
 
@@ -136,8 +145,9 @@ const sumAll = array => {
   }
   return sum;
 };
-console.log(`Testing 'sumAll(quesitonNineArray1)' function.  Expect '15': `, sumAll(quesitonNineArray1)); // Console logs 15.
-console.log(`Testing 'sumAll(quesitonNineArray2)' function.  Expect '12': `, sumAll(quesitonNineArray2)); // Console logs 12.
+console.log(`Testing 'sumAll(quesitonNineArray1)' function (expect '15'): `, sumAll(quesitonNineArray1)); // Console logs 15.
+console.log(`Testing 'sumAll(quesitonNineArray2)' function (expect '12'): `, sumAll(quesitonNineArray2)); // Console logs 12.
+console.log("\n");
 
 
 
@@ -154,8 +164,9 @@ const positiveArray = array => {
   }
   return result;
 };
-console.log(`Testing 'positiveArray(questionTenArray)' function.  Expect [1, 2, 3]: `, positiveArray(questionTenArray)); // Outputs "[1, 2, 3]".
+console.log(`Testing 'positiveArray(questionTenArray)' function (expect '[1, 2, 3]'): `, positiveArray(questionTenArray)); // Outputs "[1, 2, 3]".
 console.log(`To prove the array is unchanged, the value of 'questionTenArray' is: `, questionTenArray); // Outputs "[0, 1, -3, 2, -9, 3, 0]".
+console.log("\n");
 
 
 
@@ -163,3 +174,21 @@ console.log(`To prove the array is unchanged, the value of 'questionTenArray' is
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
 console.log("--- Question #11: ---");
+console.log("Less Than 100? -- Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.");
+    //  Examples
+    //    lessThan100(22, 15) ➞ true
+    //      // 22 + 15 = 37
+    //    lessThan100(83, 34) ➞ false
+    //      // 83 + 34 = 117
+    // lessThan100(3, 77) ➞ true
+const lessThan100 = (num1, num2) => {
+  let sum = num1 + num2;
+  if (sum < 100) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(`Testing 'lessThan100(1, 1)' (expect 'true'): `, lessThan100(1, 1)); // Outputs 'true'.
+console.log(`Testing 'lessThan100(99, 1)' (expect 'false'): `, lessThan100(99, 1)); // Outputs 'false'.
+console.log("\n");
