@@ -56,7 +56,7 @@ console.log(multiplyThree(1, 2, 3)); // Returns "6" in the String Interpolation 
 // And for the re-write, in a less complicated way:
 console.log("--- Question #4.b: ---");
 const multiplyThree1 = (number1, number2, number3) => number1 * number2 * number3;
-console.log(multiplyThree1(1, 2, 3));
+console.log(multiplyThree1(1, 2, 3)); // Returns JUST "6" to console.
 
 
 
@@ -111,7 +111,7 @@ console.log(getLast1(emptyArray)); // Returns "undefined".
 console.log("--- Question #7.a: ---");
 function find(value, array) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === value) {
+    if (value == array[i]) { // Something is wrong here with the comparative.
       return true;
     } else {
       return false;
@@ -123,30 +123,80 @@ console.log(find("In Between", exampleArray)); // Returns "false".
 // And for the re-write:
 console.log("--- Question #7.b: ---");
 
+
+
 // ----------------------
 // Stretch Goals
 // ----------------------
-// 8. Function to check if a letter is the first letter in a
-//    string. Return true if it is, and false otherwise
+// 8. Function to check if a letter is the first letter in a string. Return true if it is, and false otherwise
+console.log("--- Question #8.a: ---");
 function isFirstLetter(letter, string) {
-
+  if (letter == string[0]) {
+    return true;
+  } else {
+    return false;
+  }
 }
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple'));
+console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
+// And for the re-write:
+console.log("--- Question #8.b: ---");
+const isFirstLetter1 = (letter, string) => {
+  if (letter == string[0]) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log('isFirstLetter1 - should say true', isFirstLetter1('a', 'apple'));
+console.log('isFirstLetter1 - should say false', isFirstLetter1('z', 'apple'));
+
+
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+console.log("--- Question #9.a: ---");
+const sumArray1 = [0, 1, 2, 3, 4, 5]; // Sums to 15.
+const sumArray2 = [0, 1, 1, 2, 2, 3, 3]; // Sums to 12.
+function sumAll(array) {
   let sum = 0
   // TODO: loop to add items
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
   return sum;
 }
+console.log(sumAll(sumArray1)); // Console logs 15.
+console.log(sumAll(sumArray2)); // Console logs 12.
+// And for the re-write:
+console.log("--- Question #9.b: ---");
+const sumAll1 = array => {
+  let sum = 0
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum;
+};
+console.log(sumAll1(sumArray1)); // Console logs 15.
+console.log(sumAll1(sumArray2)); // Console logs 12.
 
-// 10. Function to return a new array of all positive (greater than zero)
-//     numbers contained in an input array. If there are no positive numbers
-//     return an empty array. Note: The input array should not change.
 
+
+// 10. Function to return a new array of all positive (greater than zero) numbers contained in an input array. If there are no positive numbers, return an empty array. Note: The input array should not change.
+console.log("--- Question #10.a: ---");
+const positiveArray = array => {
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      result.push(array[i]); // Something's wrong here.
+    }
+    return result;
+  }
+};
+console.log(positiveArray(sumArray1)); // Console logs "[1, 2, 3, 4, 5]".
+console.log(sumArray1);
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+console.log("--- Question #11.a: ---");
