@@ -4,7 +4,7 @@ console.log('***** Function Practice *****')
 
 
 
-// Ryan's Comment: Question #1 is the example question, correct?  I'll leave it as is, since it's completing it's goal. :)  Side note, I've been writing functions out in the shorthand syntax way (e.g., let function = () => {};), so I'm going to do both ways for practice, below, and number the questions in console.log outputs for easier reading.
+// Ryan's Comment: I've been writing functions out in the shorthand syntax way (e.g., let function = () => {};), so I'm going to do both ways for practice, below, and number the questions in console.log outputs for easier reading.
 
 // 1. Function to return 'Hello World!'
 console.log("--- Question #1.a: EXAMPLE QUESTION ---"); // Adding in question labels to the console for easier reading.
@@ -194,6 +194,7 @@ const positiveArray = array => {
 };
 console.log(positiveArray(sumArray1)); // Console logs "[1, 2, 3, 4, 5]".
 console.log(sumArray1);
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
