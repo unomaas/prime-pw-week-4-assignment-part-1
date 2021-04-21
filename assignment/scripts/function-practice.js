@@ -202,9 +202,6 @@ console.log("Basketball Points: You are counting points for a basketball game, g
   // points(1, 1) ➞ 5
   // points(7, 5) ➞ 29
   // points(38, 8) ➞ 100
-const points = (twos, threes) => {
-  let total = (twos * 2) + (threes * 3);
-  return total;
-};
+const points = (twos, threes) => (twos * 2) + (threes * 3);
 console.log(`Testing the 'points(15, 10)' function (expect '60'): `, points(15, 10));
 console.log(`Testing the 'points(10, 15)' function (expect '65'): `, points(10, 15));
