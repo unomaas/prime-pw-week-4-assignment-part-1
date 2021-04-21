@@ -88,8 +88,8 @@ console.log(`The value of 'questionSixEmptyArray' is: `, questionSixEmptyArray);
 const getLast = array => {
   return array[array.length -1];
 };
-console.log(`Testing 'getLast(questionSixArray)' function (expect 'Last'): `, getLast(questionSixArray)); // Outputs "Last".
-console.log(`Testing 'getLast(questionSixEmptyArray)' function (expect 'undefined'): `, getLast(questionSixEmptyArray)); // Outputs "undefined".
+console.log(`Testing the 'getLast(questionSixArray)' function (expect 'Last'): `, getLast(questionSixArray)); // Outputs "Last".
+console.log(`Testing the 'getLast(questionSixEmptyArray)' function (expect 'undefined'): `, getLast(questionSixEmptyArray)); // Outputs "undefined".
 console.log("\n");
 
 
@@ -107,9 +107,9 @@ const find = (value, array) => {
   }
   return isThere;
 };
-console.log(`Testing 'find(1)' function (expect 'true'): `, find(1, questionSevenArray)); // Returns "true".
-console.log(`Testing 'find(2)' function (expect 'true'): `, find(2, questionSevenArray)); // Returns "true".
-console.log(`Testing 'find(4)' function (expect 'false'): `, find(4, questionSevenArray)); // Returns "false".
+console.log(`Testing the 'find(1)' function (expect 'true'): `, find(1, questionSevenArray)); // Returns "true".
+console.log(`Testing the 'find(2)' function (expect 'true'): `, find(2, questionSevenArray)); // Returns "true".
+console.log(`Testing the 'find(4)' function (expect 'false'): `, find(4, questionSevenArray)); // Returns "false".
 console.log("\n");
 
 
@@ -126,18 +126,18 @@ const isFirstLetter = (letter, string) => {
     return false;
   }
 };
-console.log(`Testing 'isFirstLetter("a", "apple")' function (expect 'true'):`, isFirstLetter("a", "apple"));
-console.log(`Testing 'isFirstLetter("z", "apple")' function (expect 'false'):`, isFirstLetter("z", "apple"));
+console.log(`Testing the 'isFirstLetter("a", "apple")' function (expect 'true'):`, isFirstLetter("a", "apple"));
+console.log(`Testing the 'isFirstLetter("z", "apple")' function (expect 'false'):`, isFirstLetter("z", "apple"));
 console.log("\n");
 
 
 
 // 9. Function to return the sum of all numbers in an array
 console.log("--- Question #9: ---");
-const quesitonNineArray1 = [0, 1, 2, 3, 4, 5]; // Sums to 15.
-console.log(`The value of 'quesitonNineArray1' is: `, quesitonNineArray1);
-const quesitonNineArray2 = [0, 1, 1, 2, 2, 3, 3]; // Sums to 12.
-console.log(`The value of 'quesitonNineArray2' is: `, quesitonNineArray2);
+const questionNineArray1 = [0, 1, 2, 3, 4, 5]; // Sums to 15.
+console.log(`The value of 'questionNineArray1' is: `, questionNineArray1);
+const questionNineArray2 = [0, 1, 1, 2, 2, 3, 3]; // Sums to 12.
+console.log(`The value of 'questionNineArray2' is: `, questionNineArray2);
 const sumAll = array => {
   let sum = 0
   for (let i = 0; i < array.length; i++) {
@@ -145,8 +145,8 @@ const sumAll = array => {
   }
   return sum;
 };
-console.log(`Testing 'sumAll(quesitonNineArray1)' function (expect '15'): `, sumAll(quesitonNineArray1)); // Console logs 15.
-console.log(`Testing 'sumAll(quesitonNineArray2)' function (expect '12'): `, sumAll(quesitonNineArray2)); // Console logs 12.
+console.log(`Testing the 'sumAll(questionNineArray1)' function (expect '15'): `, sumAll(questionNineArray1)); // Console logs 15.
+console.log(`Testing the 'sumAll(questionNineArray2)' function (expect '12'): `, sumAll(questionNineArray2)); // Console logs 12.
 console.log("\n");
 
 
@@ -164,7 +164,7 @@ const positiveArray = array => {
   }
   return result;
 };
-console.log(`Testing 'positiveArray(questionTenArray)' function (expect '[1, 2, 3]'): `, positiveArray(questionTenArray)); // Outputs "[1, 2, 3]".
+console.log(`Testing the 'positiveArray(questionTenArray)' function (expect '[1, 2, 3]'): `, positiveArray(questionTenArray)); // Outputs "[1, 2, 3]".
 console.log(`To prove the array is unchanged, the value of 'questionTenArray' is: `, questionTenArray); // Outputs "[0, 1, -3, 2, -9, 3, 0]".
 console.log("\n");
 
@@ -174,13 +174,13 @@ console.log("\n");
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
 console.log("--- Question #11: ---");
-console.log("Less Than 100? -- Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.");
-    //  Examples
-    //    lessThan100(22, 15) ➞ true
-    //      // 22 + 15 = 37
-    //    lessThan100(83, 34) ➞ false
-    //      // 83 + 34 = 117
-    // lessThan100(3, 77) ➞ true
+console.log("Less Than 100: Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.");
+  //  Examples
+  //    lessThan100(22, 15) ➞ true
+  //      // 22 + 15 = 37
+  //    lessThan100(83, 34) ➞ false
+  //      // 83 + 34 = 117
+  // lessThan100(3, 77) ➞ true
 const lessThan100 = (num1, num2) => {
   let sum = num1 + num2;
   if (sum < 100) {
@@ -189,6 +189,22 @@ const lessThan100 = (num1, num2) => {
     return false;
   }
 };
-console.log(`Testing 'lessThan100(1, 1)' (expect 'true'): `, lessThan100(1, 1)); // Outputs 'true'.
-console.log(`Testing 'lessThan100(99, 1)' (expect 'false'): `, lessThan100(99, 1)); // Outputs 'false'.
+console.log(`Testing the 'lessThan100(1, 1)' function (expect 'true'): `, lessThan100(1, 1)); // Outputs 'true'.
+console.log(`Testing the 'lessThan100(99, 1)' function (expect 'false'): `, lessThan100(99, 1)); // Outputs 'false'.
 console.log("\n");
+
+
+
+console.log("--- Bonus Question #12: ---");
+console.log("The last question was a little too easy, so I'm doubling up from Edabit.com for more practice.");
+console.log("Basketball Points: You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.");
+  // Examples
+  // points(1, 1) ➞ 5
+  // points(7, 5) ➞ 29
+  // points(38, 8) ➞ 100
+const points = (twos, threes) => {
+  let total = (twos * 2) + (threes * 3);
+  return total;
+};
+console.log(`Testing the 'points(15, 10)' function (expect '60'): `, points(15, 10));
+console.log(`Testing the 'points(10, 15)' function (expect '65'): `, points(10, 15));
