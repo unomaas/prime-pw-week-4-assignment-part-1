@@ -39,11 +39,11 @@ console.log("--- Question #3.a: ---");
 function addNumbers(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
-console.log(`The sum of those numbers is (expect 5): `, addNumbers(2, 3)); // Outputs the string with "5".
+console.log(`The sum of those numbers is (expect '5'): `, addNumbers(2, 3)); // Outputs the string with "5".
 // And for the concise arrow re-write:
 console.log("--- Question #3.b: ---");
 const addNumbers1 = (firstNumber, secondNumber) => firstNumber + secondNumber;
-console.log(`The sum of those numbers is (expect 5): `, addNumbers1(2, 3)); // Outputs the string with "5".
+console.log(`The sum of those numbers is (expect '5'): `, addNumbers1(2, 3)); // Outputs the string with "5".
 console.log("\n");
 
 
@@ -53,11 +53,11 @@ console.log("--- Question #4.a: ---");
 function multiplyThree(num1, num2, num3) {
   return num1 * num2 * num3;
 }
-console.log(`The product of those numbers is (expect 6): `, multiplyThree(1, 2, 3)); // Outputs the string with "6".
+console.log(`The product of those numbers is (expect '6'): `, multiplyThree(1, 2, 3)); // Outputs the string with "6".
 // And for the concise arrow re-write:
 console.log("--- Question #4.b: ---");
 const multiplyThree1 = (num1, num2, num3) => num1 * num2 * num3;
-console.log(`The product of those numbers is (expect 6): `, multiplyThree1(1, 2, 3)); // Outputs the string with "6".
+console.log(`The product of those numbers is (expect '6'): `, multiplyThree1(1, 2, 3)); // Outputs the string with "6".
 console.log("\n");
 
 
