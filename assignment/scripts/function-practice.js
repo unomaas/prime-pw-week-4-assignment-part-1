@@ -5,6 +5,8 @@ console.log('***** Function Practice *****')
 
 // Ryan's Comment: I've been writing functions out in the concise arrow syntax (e.g., let function = () => {};), so if helps make the code more concise, I'm going to do both ways for practice, below, and number the questions in console.log outputs for easier reading.
 
+// Ryan's Comment, after class on 4/22/21: Thanks for clarifying on the downsides of using concise arrow syntax all the time!  Understood that jQuery cannot use arrow functions.  Fortunately, it's very easy to remember the syntax for normal function declaration. :)  Thanks Dane!  
+
 // 1. Function to return 'Hello World!'
 console.log("--- Question #1.a: EXAMPLE QUESTION ---"); // Adding in question labels to the console for easier viewing.
 function hello() {
